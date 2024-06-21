@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import MovieCard from "./MovieCard";
 import "./App.css";
-import { CiSearch } from "react-icons/ci";
+import { FaSearch } from "react-icons/fa";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -30,7 +30,8 @@ function App() {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         <button onClick={() => searchMovies(searchTerm)}>
-          <CiSearch />
+        <FaSearch />
+
         </button>
       </div>
       {movies?.length > 0 ? (
